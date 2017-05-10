@@ -20,7 +20,12 @@ class Guitarist(Musician):
     def tune(self):
         print("Be with you in a moment")
         print("Twoning, sproing, splang")
-
+#-------------------------
+"""
+Question
+Extend the example code to add a Drummer class.
+Drummers should be able to solo, count to four, and spontaneously combust.
+"""
 class Drummer(Musician):
     def __init__(self):
         super().__init__(["doom","tak","tss"])
@@ -32,7 +37,14 @@ class Drummer(Musician):
         print("ahhh, i'm on fire!!")
         
 #------- don't know what to do here
-        
+
+"""
+Question
+Then add a Band class. Bands should be able to hire and fire musicians,
+and have the musicians play their solos after the drummer has counted time.
+"""
+
+
 class Band(Drummer):
     def fire_musician(self):
         whoToFire = input("Who should we kick out? ")
@@ -67,10 +79,3 @@ print("")
 dean.count_to_four()
 dean.solo(4)
 
-"""
-Extend the example code to add a Drummer class.
-Drummers should be able to solo, count to four, and spontaneously combust.
-
-Then add a Band class. Bands should be able to hire and fire musicians,
-and have the musicians play their solos after the drummer has counted time.
-"""
